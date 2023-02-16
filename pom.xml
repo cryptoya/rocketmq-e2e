@@ -11,6 +11,7 @@
         <module>java</module>
         <module>java/e2e</module>
         <module>java/e2e-v4</module>
+        <module>benchmark</module>
     </modules>
     <packaging>pom</packaging>
 
