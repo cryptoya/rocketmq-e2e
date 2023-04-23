@@ -37,10 +37,6 @@ public class ClientInitStepdefs {
 
     }
 
-    @Then("Check all messages that can be consumed within {int}s")
-    public void checkAllMessagesThatCanBeConsumedWithinS(int arg0) {
-
-    }
 
     @And("A total of {int} messages are sent {string} to the {int} MessageGroups in turn")
     public void aTotalOfMessagesAreSentToTheMessageGroupsInTurn(int arg0, String arg1, int arg2) {
@@ -68,17 +64,12 @@ public class ClientInitStepdefs {
 
     }
 
-    @Then("Check all messages send {string}")
-    public void checkAllMessagesSend(String arg0) {
-
-    }
-
     @When("Create a PushConsumer, set the Endpoint\\({string}), ConsumerGroup\\({string}), SubscriptionExpression\\({string}), Topic\\({string}), MessageListener\\({string})")
     public void createAPushConsumerSetTheEndpointConsumerGroupSubscriptionExpressionTopicMessageListener(String arg0, String arg1, String arg2, String arg3, String arg4) {
 
     }
 
-    @And("Create a Producer, set the Endpoint\\({string}), RequestTimeout:\\({string}), Topic\\({string}), TransactionChecker:\\({string})")
+    @And("Create a Producer, set the Endpoint\\({string}), RequestTimeout\\({string}), Topic\\({string}), TransactionChecker\\({string})")
     public void createAProducerSetTheEndpointRequestTimeoutTopicTransactionChecker(String arg0, String arg1, String arg2, String arg3) {
 
     }
@@ -88,13 +79,28 @@ public class ClientInitStepdefs {
 
     }
 
-    @And("Create a Producer, set the Endpoint\\({string}), RequestTimeout:\\({string}), Topic\\({string})")
+    @And("Create a Producer, set the Endpoint\\({string}), RequestTimeout\\({string}), Topic\\({string})")
     public void createAProducerSetTheEndpointRequestTimeoutTopic(String arg0, String arg1, String arg2) {
 
     }
 
-    @Then("Check send message failed")
-    public void checkSendMessageFailed() {
+    @And("The Producer set MaxAttempts\\({string})")
+    public void theProducerSetMaxAttempts(String arg0) {
+
+    }
+
+    @And("The Producer set Topics\\({string})")
+    public void theProducerSetTopics(String arg0) {
+
+    }
+
+    @Given("Create a Producer, set client config Endpoint\\({string}), SessionCredentials\\({string},{string})")
+    public void createAProducerSetClientConfigEndpointSessionCredentials(String arg0, String arg1, String arg2) {
+
+    }
+
+    @Given("Create a {string} topic:{string} if not exist")
+    public void createATopicIfNotExist(String arg0, String arg1) {
 
     }
 }
