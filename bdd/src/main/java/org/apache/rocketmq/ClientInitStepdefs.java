@@ -94,13 +94,23 @@ public class ClientInitStepdefs {
 
     }
 
-    @Given("Create a Producer, set client config Endpoint\\({string}), SessionCredentials\\({string},{string})")
-    public void createAProducerSetClientConfigEndpointSessionCredentials(String arg0, String arg1, String arg2) {
+    @Given("Create a {string} topic:{string} if not exist")
+    public void createATopicIfNotExist(String arg0, String arg1) {
 
     }
 
-    @Given("Create a {string} topic:{string} if not exist")
-    public void createATopicIfNotExist(String arg0, String arg1) {
+    @When("Create a Producer, set client config Endpoint\\({string})")
+    public void createAProducerSetClientConfigEndpoint(String arg0) {
+
+    }
+
+    @When("Create a Producer, set client config Endpoint\\({string}), RequestTimeout\\({string})")
+    public void createAProducerSetClientConfigEndpointRequestTimeout(String endpoint, String requestTimeout) {
+
+    }
+
+    @When("Create a Producer, set client config Endpoint\\({string}), RequestTimeout\\({string}), SessionCredentials\\({string},{string})")
+    public void createAProducerSetClientConfigEndpointRequestTimeoutSessionCredentials(String arg0, String arg1, String arg2, String arg3) {
 
     }
 }

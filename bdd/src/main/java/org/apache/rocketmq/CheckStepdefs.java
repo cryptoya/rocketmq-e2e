@@ -10,7 +10,7 @@ public class CheckStepdefs {
     }
 
     @Then("Check all messages send {string}")
-    public void checkAllMessagesSend(String arg0) {
+    public void checkAllMessagesSend(String success) {
 
     }
 
@@ -28,4 +28,8 @@ public class CheckStepdefs {
 
     }
 
+    @Then("Check the Producer will start success")
+    public void checkTheProducerWillStartSuccess() {
+
+    }
 }

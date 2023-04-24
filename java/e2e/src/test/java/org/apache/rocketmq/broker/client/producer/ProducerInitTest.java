@@ -170,7 +170,7 @@ public class ProducerInitTest extends BaseOperate {
     }
 
     @Test
-    @DisplayName("The Producer sets the maximum retry times to 0, expect the client start success")
+    @DisplayName("The Producer sets the maximum retry times to 0, expect the client start failed")
     public void testSet0MaxAttempts() {
         assertThrows(Exception.class, () -> {
             Producer producer = provider.newProducerBuilder()
